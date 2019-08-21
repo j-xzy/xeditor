@@ -1,0 +1,48 @@
+{
+  "name": "@xeditor/plugin-data-driver",
+  "version": "2.0.1",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "interface"
+  ],
+  "scripts": {
+    "demo": "webpack-dev-server --config ./demo/webpack.config.js --open",
+    "clean": "rimraf lib",
+    "build": "yarn clean && tsc -p ./tsconfig.json",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "fix-lint": "tslint -c tslint.json -p tsconfig.json --fix"
+  },
+  "peerDependencies": {
+    "@xeditor/core": "^2.0.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@xeditor/core": "^2.0.0",
+    "@xeditor/plugin-layer": "^1.1.2",
+    "@xeditor/layer": "^1.2.0",
+    "@xeditor/expression": "^1.0.4",
+    "@xeditor/plugin-choose": "^1.0.1",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.3.3",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "removeComments": true,
+    "outDir": "./lib",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "declaration": false,
+    "rootDir": "./src",
+    "module": "commonjs",
+    "target": "esnext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@xeditor/core/interface",
+      "./node_modules/@xeditor/plugin-event/interface"
+    ]
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

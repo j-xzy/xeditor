@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "chrome": 52
+        }
+      }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    [
+      "./index.js",
+      {
+        "connect": true 
+      }
+    ]
+  ]
+}

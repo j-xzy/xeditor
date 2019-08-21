@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "rootDir": "./src",
+    "module": "commonjs",
+    "target": "esnext",
+    "outDir": "./dist",
+    "declaration": false,
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "typeRoots": [
+    "./node_modules/@types",
+    "./node_modules/@xeditor"
+  ],
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}

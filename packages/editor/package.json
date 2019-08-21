@@ -1,0 +1,54 @@
+{
+  "name": "@xeditor/editor",
+  "version": "2.2.3",
+  "main": "./lib/index.js",
+  "author": "whj",
+  "files": [
+    "lib",
+    "interface"
+  ],
+  "scripts": {
+    "demo": "webpack-dev-server --config ./demo/webpack.config.js --open",
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "fix-lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "dependencies": {
+    "@xeditor/core": "^2.0.1",
+    "@xeditor/layer": "^2.0.1",
+    "@xeditor/event-panel": "^2.0.4",
+    "@xeditor/expression": "^2.0.3",
+    "@xeditor/plugin-data-driver": "^2.0.1",
+    "@xeditor/plugin-choose": "^2.0.0",
+    "@xeditor/plugin-event": "^2.0.1",
+    "@xeditor/plugin-layer": "^2.0.0",
+    "immutability-helper": "^3.0.0",
+    "requirejs-esmodule": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.5",
+    "@types/react-dom": "^16.8.2",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "rimraf": "^2.6.3",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.13.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.4.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "url-loader": "^1.1.2"
+  }
+}

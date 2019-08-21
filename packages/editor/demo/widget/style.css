@@ -1,0 +1,6 @@
+.style-widget {
+  display: flex;
+}
+.style-widget .evt-icon-arrow  {
+  fill: #000;
+}

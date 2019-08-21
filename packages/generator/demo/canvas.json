@@ -1,0 +1,141 @@
+{
+  "name": "项目名称",
+  "data": {
+    "root": {
+      "option": {
+        "group": "画布"
+      },
+      "state": {
+        "name": "画布",
+        "id": 1,
+        "style": {
+          "margin": "0",
+          "padding": "0",
+          "width": "100%",
+          "height": "100%",
+          "float": "none",
+          "display": "block",
+          "position": "relative",
+          "top": "0",
+          "left": "0",
+          "overflow": "hidden",
+          "zIndex": 0,
+          "visibility": "visible"
+        }
+      },
+      "children": [
+        {
+          "_srcPath": "/home/whj/Documents/xeditor/generator/demo/property/v1.0",
+          "option": {
+            "path": "/home/whj/Documents/xeditor/generator/demo/property/v1.0",
+            "group": "画布",
+            "__uploads": [
+     
+            ]
+          },
+          "state": {
+            "name": "属性示例",
+            "style": {
+              "position": "relative",
+              "visibility": "visible",
+              "display": "block",
+              "float": "none",
+              "width": "180px",
+              "height": "180px",
+              "zIndex": 0,
+              "margin": "0px",
+              "padding": "0px",
+              "top": "0",
+              "left": "0",
+              "right": "0",
+              "bottom": "0",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "flex": "0 1 auto",
+              "backgroundImage": "url()",
+              "backgroundSize": "cover",
+              "backgroundColor": "rgba(255,255,255,0)"
+            },
+            "property": {
+              "refresh": -1,
+              "input": "文本",
+              "select": "value1",
+              "switch": "value1",
+              "radio": "value1",
+              "checkbox": [
+                "value1"
+              ],
+              "upload": "http://192.168.8.96:8000/public/images/Gnf_MkAzZKBDH79JnT_Ri6U9.png",
+              "color": "#ff8800",
+              "slider": 5,
+              "nest": {
+                "nest1": {
+                  "foo": "http://192.168.8.96:8000/public/images/1XbQaGxbNAxWzHVsX5zseRBz.png",
+                  "bar": true,
+                  "nest2": {
+                    "foo": "xxx",
+                    "nest3": {
+                      "name": "1"
+                    }
+                  }
+                },
+                "prop1": "prop1",
+                "prop2": "prop2"
+              }
+            },
+            "id": 4
+          },
+          "children": []
+        }
+      ]
+    },
+    "hidden": [
+      {
+        "option": {
+          "group": "变量"
+        },
+        "state": {
+          "name": "变量",
+          "id": 2
+        },
+        "children": []
+      },
+      {
+        "option": {
+          "group": "服务"
+        },
+        "state": {
+          "name": "服务",
+          "id": 3
+        },
+        "children": []
+      }
+    ],
+    "canvas": {
+      "dataDriver": {},
+      "eventState": {
+        "type": "EventRoot",
+        "state": {
+          "id": 0,
+          "disabled": false
+        },
+        "children": []
+      },
+      "property": {
+        "adaptation": false,
+        "refresh": -1
+      },
+      "name": "canvaStore",
+      "id": 0,
+      "style": {
+        "width": "1920px",
+        "height": "1080px",
+        "backgroundSize": "cover",
+        "backgroundImage": "url()",
+        "backgroundColor": "#ffffff",
+        "scale": 0.55
+      }
+    }
+  }
+}

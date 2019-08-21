@@ -1,0 +1,39 @@
+@import('../style/ellipsis.styl')
+
+.evt-action
+  .evt-action-arrow
+    margin: 0 3px 0 0
+  .evt-action-target
+    font-size: 14px
+    color: rgba(0,0,0,0.65)
+    background: #fff;
+    height: 22px
+    line-height: 23px
+    width: 100px
+    text-align: left 
+    padding: 0 5px
+    cursor: default
+    @extend .ellipsis
+  .evt-node-right
+    flex:1 0 200px
+    .lite-select-value
+      border: none
+    .evt-action-type-select
+      min-width: 160px
+      margin: 0 4px 0 0
+    .evt-action-fj
+      margin: 0 0 0 5px
+    .evt-action-drop-btn
+      width: 16px;
+      height: 14px;
+      margin: 0 6px 0 3px;
+      outline: 1px solid rgba(255, 255, 255, 0.8);
+      text-align: center;
+      line-height: 14px;
+      font-size: 12px;
+      &:before
+        transform: rotate(180deg)
+        display: block;
+    .evt-action-drop-btn-up
+      &:before
+        transform: rotate(0deg)

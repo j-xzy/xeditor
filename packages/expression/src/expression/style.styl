@@ -1,0 +1,98 @@
+font = 12px Arial, sans-serif
+selectHeight = 20px !important
+textColor = rgba(0,0,0,0.7)
+
+.expre-ellipsis
+  overflow: hidden
+  text-overflow:ellipsis
+  white-space: nowrap
+
+
+.expre-normal-flex
+  display: flex
+  flex-flow: row nowrap
+  justify-content: start
+  align-items: center
+
+.expre-font-style
+  font: font
+  color: textColor
+
+.expre-error
+  border: 1px solid red
+.expre
+  position: relative
+  border-radius: 2px
+  @extend .expre-normal-flex
+  .expre-select
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    z-index 1
+    background:rgba(0,0,0,0)
+    pointer-events: none
+    .lite-select-value
+      opacity: 0
+    .lite-select-ul
+      pointer-events: all
+  .expre-down-wrapper
+    position: relative
+    right: 3px
+    height: 22px
+    width: 18px
+    background: #fff
+    cursor: pointer
+    .expre-down
+      position: relative
+      right: -5px
+      top: 14px
+      border-top: 7px solid rgba(99,99,99,0.85)
+      border-left: 5px solid rgba(0,0,0,0)
+      border-right: 5px solid rgba(0,0,0,0)
+      height: 0
+      width: 0
+  .expre-other-var
+    @extend .expre-font-style
+    height: 22px
+    background: rgba(255,255,255,0.7) !important
+    line-height: 22px
+    white-space: nowrap
+  .expre-ipt
+    @extend .expre-font-style
+    border: none !important
+    margin: 0 3px
+    padding: 0 !important
+    width: 150px
+  .expre-auto-ipt
+    .lite-input 
+      @extend .expre-font-style
+      border: none !important
+  .expre-comp-bck
+    background: rgba(255, 255, 255, 0.7) !important
+    border-radius: 2px
+  .expre-comp
+    background: #fff
+    height: 22px
+    @extend .expre-normal-flex
+    .expre-comp-name
+      @extend .expre-font-style
+      white-space: nowrap
+    .expre-comp-dot
+      margin: 0px 2px
+      white-space: nowrap
+    .lite-select
+      height: selectHeight
+    .expre-comp-property
+      @extend .expre-font-style
+      @extend .expre-ellipsis
+      max-width: 50px
+      white-space: nowrap
+    .expre-comp-select
+      width: 55px !important
+      .lite-select-value
+        background: #e2e2e2
+        height: selectHeight
+        padding: 0 !important
+      .lite-select-text
+        font: font !important

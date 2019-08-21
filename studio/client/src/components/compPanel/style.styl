@@ -1,0 +1,49 @@
+.comp-panel
+  flex: 1
+  background: #222
+  overflow: auto
+  border-right: 1px solid #000
+  .lite-collapse-head
+    color: #dedede
+    border-bottom: 1px #000 solid
+    border-top: 1px #000 solid
+  .common-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+    padding: 10px 12px
+    .iconfont
+      border: 1px solid rgba(222, 222, 222, 0.6)
+      padding: 3px
+      font-size: 26px
+      cursor: move
+      margin: 0 10px 10px 0
+      &:hover
+        border: 1px solid #ff8800
+      &:before
+        color: #dedede
+  .comp-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 0px 12px
+    .comp
+      margin: 10px 0
+      .comp-preview
+        background-size: 100% 100%
+        border: 1px solid #444
+        width: 110px
+        height 60px
+        cursor: move
+        &:hover
+          border: 1px solid #ff8800
+      .comp-name
+        width: 105px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        font-size: 14px
+        padding: 2px 0 0 2px
+        color: #dedede

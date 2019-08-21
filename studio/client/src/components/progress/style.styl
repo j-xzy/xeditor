@@ -1,0 +1,18 @@
+.progress
+  position: absolute
+  top: 35px
+  width: 0
+  height: 1px
+  background: url(../../assets/images/progress.png) repeat-x
+.progress-animation
+  animation: flash 1s infinite linear
+  width: 100vw
+
+@keyframes flash {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "target": "es6",
+    "lib": [
+      "es2016.array.include",
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "reflect-metadata"
+    ],
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "typeRoots": [
+      "../src/interface",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "coreditor": [
+        "../src"
+      ]
+    }
+  }
+}

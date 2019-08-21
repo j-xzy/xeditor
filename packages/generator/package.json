@@ -1,0 +1,41 @@
+{
+  "name": "@xeditor/generator",
+  "version": "2.4.2",
+  "main": "./lib/index.js",
+  "author": "whj",
+  "scripts": {
+    "demo": "node ./demo/index.js",
+    "server": "node ./demo/server.js",
+    "watch": "tsc -p ./tsconfig.json -w",
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "fix-lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib",
+    "template"
+  ],
+  "dependencies": {
+    "@babel/generator": "^7.3.4",
+    "@babel/parser": "^7.3.4",
+    "@babel/template": "^7.2.2",
+    "@babel/types": "^7.3.4",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "download": "^7.1.0",
+    "fs-extra": "^7.0.1",
+    "yauzl": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/download": "^6.2.4",
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.12.18",
+    "@types/yauzl": "^2.9.1",
+    "@xeditor/editor": "^2.0.6",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  }
+}

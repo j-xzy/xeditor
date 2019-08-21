@@ -1,0 +1,52 @@
+.property-panel-wrapper
+  max-height: 80vh
+  overflow: auto
+  padding: 0 0 1px 0
+  .property-panel
+    position: relative
+    overflow: hidden
+    .lite-collapse
+      .lite-collapse-head
+        background: rgba(0,0,0,0)
+        .lite-collapse-title
+          font-weight: 900 !important
+          color: #dedede !important
+      .lite-collapse-content
+        padding: 0 0 0 18px
+        .property-name
+          min-width: auto !important
+    .property-item-wrapper
+      display: flex
+      align-items: center
+      padding: 4px 5px 4px 10px
+      &:last-child
+        border-bottom: none
+      .icon-bind
+        color: #fff
+        font-size: 16px
+        cursor: pointer
+        &:hover
+          color: #f80
+      .binding
+        color: #f80
+      .property-item
+        position: relative
+        display: flex
+        align-items: center
+        padding: 0 5px 0 0
+        .property-name
+          color: #dedede
+          margin: 0 2px 0 0
+          white-space: nowrap
+          font-size: 12px
+          min-width: 60px
+          text-align: right
+        .property-content
+          .preview-image
+            position: relative
+            width: 130px
+            height: 60px
+            background-size: contain
+        .lite-checkbox-label,.lite-radio-label
+            color: #dedede
+        
